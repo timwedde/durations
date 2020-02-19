@@ -1,7 +1,7 @@
 import unittest
 
-from durations.exceptions import InvalidTokenError
-from durations.parser import (
+from durations_nlp.exceptions import InvalidTokenError
+from durations_nlp.parser import (
     extract_tokens,
     valid_token
 )

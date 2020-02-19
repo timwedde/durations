@@ -1,7 +1,7 @@
-from durations.scales import Scale
-from durations.exceptions import ScaleFormatError
-from durations.constants import *
-from durations.exceptions import (
+from durations_nlp.scales import Scale
+from durations_nlp.exceptions import ScaleFormatError
+from durations_nlp.constants import *
+from durations_nlp.exceptions import (
     ScaleFormatError,
     InvalidTokenError
 )

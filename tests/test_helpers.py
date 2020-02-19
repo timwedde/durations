@@ -1,6 +1,6 @@
 import unittest
 
-from durations.helpers import valid_duration
+from durations_nlp.helpers import valid_duration
 
 
 class HelpersTest(unittest.TestCase):

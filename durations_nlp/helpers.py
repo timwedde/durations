@@ -1,5 +1,5 @@
-from durations import Duration
-from durations.exceptions import ScaleFormatError
+from durations_nlp import Duration
+from durations_nlp.exceptions import ScaleFormatError
 
 
 def valid_duration(representation):

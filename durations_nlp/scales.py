@@ -1,7 +1,7 @@
 from collections import namedtuple
 
-from durations.constants import *
-from durations.exceptions import ScaleFormatError
+from durations_nlp.constants import *
+from durations_nlp.exceptions import ScaleFormatError
 
 
 class Scale(object):
