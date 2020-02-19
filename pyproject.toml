@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "durations_nlp"
-version = "0.1.0"
+version = "0.4.0"
 description = "A python durations parsing library."
 authors = ["Tim Wedde <timwedde@icloud.com>"]
 license = "MIT"
