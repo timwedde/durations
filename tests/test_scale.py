@@ -7,4 +7,3 @@ class TestScale(unittest.TestCase):
 
     def tearDown(self):
         pass
-

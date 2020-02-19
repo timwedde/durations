@@ -1,6 +1,4 @@
 from collections import namedtuple
-from functools import partial
-from types import MethodType
 
 from durations_nlp.parser import extract_tokens
 from durations_nlp.scales import Scale
@@ -31,6 +29,7 @@ class Duration(object):
         >>> d.to_minutes()
         3060.0
     """
+
     def __init__(self, representation, *args, **kwargs):
         self.representation = representation
         self.parsed_durations = self.parse(self.representation)
@@ -64,9 +63,10 @@ class Duration(object):
         elements = extract_tokens(representation)
 
         try:
-            scales = [DurationRepresentation(float(p[0]), Scale(p[1])) for p in elements]
+            scales = [DurationRepresentation(float(p[0]), Scale(p[1]))
+                      for p in elements]
         except ValueError:
-            raise ScaleFormatError("Malformed duration representation: {0}".format(representation))
+            raise ScaleFormatError("Malformed duration representation: {0}".format(representation))  # noqa: E501
 
         return scales
 
@@ -99,4 +99,3 @@ class Duration(object):
 
     def to_miliseconds(self):
         return round(self.seconds / float(SCALE_MILISECOND_CONVERSION_UNIT), 2)
-

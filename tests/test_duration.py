@@ -1,7 +1,6 @@
 import unittest
 
 from durations_nlp import Duration, Scale
-from durations_nlp.constants import *
 from durations_nlp.exceptions import ScaleFormatError
 
 
@@ -28,7 +27,7 @@ class TestDuration(unittest.TestCase):
         self.assertEqual(duration_representation.scale.representation.short, 'd')
 
     def test_parse_composed_valid_scale(self):
-        duration_representation = self.test_duration.parse('1d, 24h and 36 minutes')
+        duration_representation = self.test_duration.parse('1d, 24h and 36 minutes')  # noqa: E501
 
         self.assertTrue(isinstance(duration_representation, list))
         self.assertEqual(len(duration_representation), 3)

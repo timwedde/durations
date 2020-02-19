@@ -1,5 +1,3 @@
-from collections import namedtuple
-
 from durations_nlp.constants import *
 from durations_nlp.exceptions import ScaleFormatError
 
@@ -41,7 +39,7 @@ class Scale(object):
 
     def __init__(self, str_representation, *args, **kwargs):
         self.representation = self.get(str_representation)
-        self.conversion_unit = self.SCALES_CONVERTION_UNITS[self.representation.short]
+        self.conversion_unit = self.SCALES_CONVERTION_UNITS[self.representation.short]  # noqa: E501
 
     def __str__(self):
         return '<Scale {0}>'.format(self.representation.long_singular)
@@ -62,4 +60,4 @@ class Scale(object):
         for scale in self.SCALES:
             if str_representation in scale:
                 return scale
-        raise ScaleFormatError("Unsupported scale format: {0}".format(str_representation))
+        raise ScaleFormatError("Unsupported scale format: {0}".format(str_representation))  # noqa: E501

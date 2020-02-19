@@ -9,4 +9,3 @@ def valid_duration(representation):
         return False
 
     return True
-
