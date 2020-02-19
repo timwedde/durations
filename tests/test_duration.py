@@ -7,15 +7,25 @@ from durations_nlp.exceptions import ScaleFormatError
 class TestDuration(unittest.TestCase):
     def setUp(self):
         self.test_duration = Duration('1d')
+        self.test_duration2 = Duration('1D')
 
     def tearDown(self):
         pass
 
+    def test_conversions(self):
+        self.assertEqual(self.test_duration2.to_centuries(), 0.1)
+        self.assertEqual(self.test_duration2.to_decades(), 1)
+        self.assertEqual(self.test_duration2.to_years(), 10)
+        self.assertEqual(self.test_duration2.to_months(), 120)
+        self.assertEqual(self.test_duration2.to_weeks(), 522.86)
+        self.assertEqual(self.test_duration2.to_days(), 3660)
+        self.assertEqual(self.test_duration2.to_hours(), 87840)
+        self.assertEqual(self.test_duration2.to_minutes(), 5270400)
+        self.assertEqual(self.test_duration2.to_seconds(), 316224000)
+        self.assertEqual(self.test_duration2.to_miliseconds(), 316224000000)
+
     def test_repr_has_valid_representation(self):
-        self.assertEqual(
-            self.test_duration.__repr__(),
-            '<Duration 1d>'
-        )
+        self.assertEqual(self.test_duration.__repr__(), '<Duration 1d>')
 
     def test_parse_simple_valid_scale(self):
         duration_representation = self.test_duration.parse('1d')

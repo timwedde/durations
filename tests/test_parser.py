@@ -1,10 +1,7 @@
 import unittest
 
 from durations_nlp.exceptions import InvalidTokenError
-from durations_nlp.parser import (
-    extract_tokens,
-    valid_token
-)
+from durations_nlp.parser import extract_tokens, valid_token
 
 
 class ParserTest(unittest.TestCase):
@@ -31,6 +28,9 @@ class ParserTest(unittest.TestCase):
 
     def test_valid_token_with_invalid_separator_token(self):
         self.assertFalse(valid_token('adn'))
+
+    def test_extract_tokens_invalid(self):
+        self.assertEqual([], extract_tokens('?h'))
 
     def test_extract_tokens_simple_valid_scale(self):
         short_tokens = extract_tokens('1h')
