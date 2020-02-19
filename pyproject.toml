@@ -9,7 +9,7 @@ repository = "https://github.com/timwedde/durations_nlp"
 homepage = "https://github.com/timwedde/durations_nlp"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.5"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"
