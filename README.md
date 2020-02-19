@@ -4,13 +4,10 @@
 [![codecov](https://codecov.io/gh/timwedde/durations_nlp/branch/master/graph/badge.svg)](https://codecov.io/gh/timwedde/durations_nlp)
 [![Downloads](https://pepy.tech/badge/durations_nlp)](https://pepy.tech/project/durations_nlp)
 
-A short description of what this does.
+A python durations parsing library, providing a straight forward api to parse durations string representations such as `1d` or `1 day 2 hours` or `2 days 3h 26m 52s` and convert them to numeric value.
 
 ## What and Why
-A python durations parsing library, providing a straight forward api to parse durations string representations such as '1d' or '1 day 2 hours' or '2 days 3h 26m 52s' and convert them to numeric value.
-
-It's easier, and more straight forward to read a duration in it's human form (at least for a human), as an expression
-rather than an amount. When writing configuration files for example:
+It's easier, and more straight forward to read a duration in it's human form (at least for a human), as an expression rather than an amount. When writing configuration files for example:
 
 ```yaml
 interval: 3 hours
