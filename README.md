@@ -1,12 +1,10 @@
-durations
-=========
+# Durations
 
-## What it is?
+A short description of what this does.
 
+## What and Why
 A python durations parsing library, providing a straight forward api to parse durations string representations
 such as '1d' or '1 day 2 hours' or '2 days 3h 26m 52s' and convert them to numeric value.
-
-## Why is it?
 
 It's easier, and more straight forward to read a duration in it's human form (at least for a human), as an expression
 rather than an amount. When writing configuration files for example:
@@ -25,29 +23,19 @@ right?
 
 ## Installation
 
-### with pip
-
+`durations` can be installed via pip:
 ```bash
 $ pip install durations
 ```
 
-### with setuptools
-
-```bash
-$ git clone git@github.com:oleiade/durations
-$ cd durations
-$ python setup.py install
-```
-
 ## Usage
-
 To parse a duration string representation, just instantiate a Duration object, and let it work for you.
 A Duration representation is composed of as many ``<value><scale>`` pairs as you need to express it:
 * A value is an integer amount.
 * A scale is a duration unit in it's short or long form (both singular and plural).
 * Duration pairs can be separated with sep characters and expressions such as "," or "and"
 
-*examples*:
+### Examples
 
 ```
 1d
@@ -57,8 +45,7 @@ A Duration representation is composed of as many ``<value><scale>`` pairs as you
 ...
 ```
 
-#### Scales reference
-
+### Scales reference
 ```
 Century scale formats: 'c', 'century', 'centuries'
 Decade scale formats: 'D', 'decade', 'decades'
@@ -72,8 +59,7 @@ Second scale formats: 's', 'second', 'seconds'
 Milisecond scale formats: 'ms', 'milisecond', 'miliseconds'
 ```
 
-#### A good example worths it all
-
+### A good example is worth it all
 ```python
 >>> from durations import Duration
 
@@ -85,7 +71,6 @@ Milisecond scale formats: 'ms', 'milisecond', 'miliseconds'
 >>> one_hour_duration.to_minutes()
 60.0
 
-
 # You can even compose durations in their short
 # and long variations
 >>> two_days_three_hours = '2 days, 3h'
@@ -95,7 +80,3 @@ Milisecond scale formats: 'ms', 'milisecond', 'miliseconds'
 >>> two_days_three_hours_duration.to_hours()
 51.0
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/oleiade/durations/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
