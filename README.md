@@ -1,5 +1,9 @@
 # Durations
 
+[![CircleCI](https://circleci.com/gh/timwedde/durations_nlp.svg?style=svg)](https://circleci.com/gh/timwedde/durations_nlp)
+[![codecov](https://codecov.io/gh/timwedde/durations_nlp/branch/master/graph/badge.svg)](https://codecov.io/gh/timwedde/durations_nlp)
+[![Downloads](https://pepy.tech/badge/durations_nlp)](https://pepy.tech/project/durations_nlp)
+
 A short description of what this does.
 
 ## What and Why
