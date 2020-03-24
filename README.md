@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/timwedde/durations_nlp.svg?style=svg)](https://circleci.com/gh/timwedde/durations_nlp)
 [![codecov](https://codecov.io/gh/timwedde/durations_nlp/branch/master/graph/badge.svg)](https://codecov.io/gh/timwedde/durations_nlp)
-[![Downloads](https://pepy.tech/badge/durations_nlp)](https://pepy.tech/project/durations_nlp)
+[![Downloads](https://pepy.tech/badge/durations-nlp)](https://pepy.tech/project/durations-nlp)
 
 A python durations parsing library, providing a straight-forward API to parse duration string representations such as `1d`, `1 day 2 hours` or `2 days 3h 26m 52s` and convert them to numeric values.
 
