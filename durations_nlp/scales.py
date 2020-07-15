@@ -19,7 +19,7 @@ class Scale(object):
         SCALE_HOUR,
         SCALE_MINUTE,
         SCALE_SECOND,
-        SCALE_MILISECOND
+        SCALE_MILLISECOND
     )
 
     # Scale short string representation to seconds amount per unit
@@ -34,7 +34,7 @@ class Scale(object):
         SCALE_HOUR.short: SCALE_HOUR_CONVERSION_UNIT,
         SCALE_MINUTE.short: SCALE_MINUTE_CONVERSION_UNIT,
         SCALE_SECOND.short: SCALE_SECOND_CONVERSION_UNIT,
-        SCALE_MILISECOND.short: SCALE_MILISECOND_CONVERSION_UNIT
+        SCALE_MILLISECOND.short: SCALE_MILLISECOND_CONVERSION_UNIT
     }
 
     def __init__(self, str_representation, *args, **kwargs):

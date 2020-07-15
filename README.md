@@ -50,7 +50,7 @@ To parse a duration string representation, just instantiate a Duration object an
 * Hour: `h`, `hour`, `hours`
 * Minute:`m`, `minute`, `minutes`
 * Second: `s`, `second`, `seconds`
-* Milisecond: `ms`, `milisecond`, `miliseconds`
+* Millisecond: `ms`, `millisecond`, `milliseconds`
 
 ### Usage Example
 

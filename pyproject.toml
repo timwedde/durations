@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "durations_nlp"
-version = "0.4.1"
+version = "1.0.0"
 description = "A python durations parsing library."
 authors = ["Tim Wedde <timwedde@icloud.com>"]
 license = "MIT"
@@ -9,7 +9,7 @@ repository = "https://github.com/timwedde/durations_nlp"
 homepage = "https://github.com/timwedde/durations_nlp"
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"

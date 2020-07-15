@@ -97,5 +97,5 @@ class Duration(object):
     def to_seconds(self):
         return round(self.seconds / float(SCALE_SECOND_CONVERSION_UNIT), 2)
 
-    def to_miliseconds(self):
-        return round(self.seconds / float(SCALE_MILISECOND_CONVERSION_UNIT), 2)
+    def to_milliseconds(self):
+        return round(self.seconds / float(SCALE_MILLISECOND_CONVERSION_UNIT), 2)

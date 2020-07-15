@@ -22,7 +22,7 @@ class TestDuration(unittest.TestCase):
         self.assertEqual(self.test_duration2.to_hours(), 87840)
         self.assertEqual(self.test_duration2.to_minutes(), 5270400)
         self.assertEqual(self.test_duration2.to_seconds(), 316224000)
-        self.assertEqual(self.test_duration2.to_miliseconds(), 316224000000)
+        self.assertEqual(self.test_duration2.to_milliseconds(), 316224000000)
 
     def test_repr_has_valid_representation(self):
         self.assertEqual(self.test_duration.__repr__(), '<Duration 1d>')

@@ -31,13 +31,13 @@ SCALE_DAY = ScaleRepresentation('d', 'day', 'days')
 SCALE_HOUR = ScaleRepresentation('h', 'hour', 'hours')
 SCALE_MINUTE = ScaleRepresentation('m', 'minute', 'minutes')
 SCALE_SECOND = ScaleRepresentation('s', 'second', 'seconds')
-SCALE_MILISECOND = ScaleRepresentation('ms', 'milisecond', 'miliseconds')
+SCALE_MILLISECOND = ScaleRepresentation('ms', 'millisecond', 'milliseconds')
 
 # Conversion constants. Each contains it's seconds
 # per unit amount. For example: 1 minute is 60 seconds,
 # or 1 hour is 3600 seconds.
 SCALE_SECOND_CONVERSION_UNIT = 1
-SCALE_MILISECOND_CONVERSION_UNIT = 0.001 * SCALE_SECOND_CONVERSION_UNIT
+SCALE_MILLISECOND_CONVERSION_UNIT = 0.001 * SCALE_SECOND_CONVERSION_UNIT
 SCALE_MINUTE_CONVERSION_UNIT = 60 * SCALE_SECOND_CONVERSION_UNIT
 SCALE_HOUR_CONVERSION_UNIT = 60 * SCALE_MINUTE_CONVERSION_UNIT
 SCALE_DAY_CONVERSION_UNIT = 24 * SCALE_HOUR_CONVERSION_UNIT
