@@ -24,7 +24,7 @@ ScaleRepresentation = namedtuple(
 # Duration scales string representations
 SCALE_CENTURY = ScaleRepresentation('c', 'century', 'centuries')
 SCALE_DECADE = ScaleRepresentation('D', 'decade', 'decades')
-SCALE_YEAR = ScaleRepresentation('y', 'year', 'Year')
+SCALE_YEAR = ScaleRepresentation('y', 'year', 'years')
 SCALE_MONTH = ScaleRepresentation('M', 'month', 'months')
 SCALE_WEEK = ScaleRepresentation('w', 'week', 'weeks')
 SCALE_DAY = ScaleRepresentation('d', 'day', 'days')
